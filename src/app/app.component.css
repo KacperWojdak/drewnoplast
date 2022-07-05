@@ -97,7 +97,7 @@ header .flags .flag2 {
     height: 579px;
     left: 0;
     top: 50px;
-    background: url(bg.jpg);
+    background: url(/assets/img/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
