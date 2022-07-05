@@ -264,6 +264,7 @@ header .flags .flag2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    left: 0;
 }
 .realization .realizationText {
     padding: 0;
@@ -299,7 +300,6 @@ header .flags .flag2 {
     flex-wrap: wrap;
     height: 1012px;
     width: 1440px;
-    left: 0;
 }
 .realization .realizationImg .box {
     width: 50%;
