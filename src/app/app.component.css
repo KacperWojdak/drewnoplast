@@ -299,6 +299,7 @@ header .flags .flag2 {
     flex-wrap: wrap;
     height: 1012px;
     width: 1440px;
+    left: 0;
 }
 .realization .realizationImg .box {
     width: 50%;
