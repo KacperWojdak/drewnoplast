@@ -33,10 +33,10 @@
       <button><p>Więcej</p></button>
       <div class="arrow_right" onclick="bgChange(event)"></div>
   </div>
-  <div class="slider">
-      <div class="circle active"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
+  <div class="slider" id="slider">
+    <div class="circle active" onclick="changeBg()"></div>
+    <div class="circle" onclick="changeBg2()"></div>
+    <div class="circle" onclick="changeBg3()"></div>
   </div>
 </section>
 <!--O nas-->
@@ -237,3 +237,27 @@
       <p>Created with love by <a>Ad Awards</a></p>
   </div>
 </footer>
+<script>
+    function changeBg() {
+        var banner = document.getElementsByClassName('banner')[0];
+        banner.style.backgroundImage = "url('bg.jpg')";
+    }
+    function changeBg2() {
+        var banner = document.getElementsByClassName('banner')[0];
+        banner.style.backgroundImage = "url('bg2.jpg')";
+    }
+    function changeBg3() {
+        var banner = document.getElementsByClassName('banner')[0];
+        banner.style.backgroundImage = "url('bg3.jpg')";
+    }
+
+    var slider = document.getElementById("slider");
+    var circle = slider.getElementsByClassName("circle");
+    for (var i = 0; i < circle.length; i++) {
+        circle[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
