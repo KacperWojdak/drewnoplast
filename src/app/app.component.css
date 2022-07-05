@@ -247,7 +247,6 @@ header .flags .flag2 {
     height: 15px;
     gap: 10px;
     top: 40px;
-    cursor: pointer;
 }
 .banner .slider .circle {
     width: 15px;
@@ -255,6 +254,7 @@ header .flags .flag2 {
     background: #fff;
     border-radius: 50%;
     transition: 0.5s;
+    cursor: pointer;
 }
 .banner .slider .circle.active {
     background: #d30018;
