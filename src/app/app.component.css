@@ -254,7 +254,6 @@ header .flags .flag2 {
     transition: 0.5s;
 }
 .banner .slider .circle.active {
-    border: 1px solid white;
     background: #d30018;
 }
 /* ---------Realizacja---------- */
