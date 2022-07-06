@@ -256,6 +256,7 @@ header .flags .flag2 {
     border-radius: 50%;
     transition: 0.5s;
     cursor: pointer;
+    opacity: 0.5;
 }
 .banner .slider .circle.active {
     background: #d30018;
