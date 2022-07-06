@@ -100,7 +100,7 @@ header .flags .flag2 {
     background: url(/assets/img/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
-    translate: 0.5s;
+    transition: 0.5s;
 }
 .banner .menu {
     position: absolute;
