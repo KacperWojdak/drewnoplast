@@ -10,7 +10,7 @@ function changeBg3() {
     var banner = document.getElementsByClassName('banner')[0];
     banner.style.backgroundImage = "url('/assets/img/bg3.jpg')";
 }
-
+function activeSlider() {
 var slider = document.getElementById("slider");
 var circle = slider.getElementsByClassName("circle");
 for (var i = 0; i < circle.length; i++) {
@@ -19,4 +19,5 @@ for (var i = 0; i < circle.length; i++) {
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
     });
+}
 }
