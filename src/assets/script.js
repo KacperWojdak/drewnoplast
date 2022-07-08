@@ -19,7 +19,7 @@ for (var i = 0; i < circle.length; i++) {
 }
 function arrowChange() {
     var banner = document.getElementsByClassName('banner');
-    var images = ["url('bg.jpg')", "url('bg2.jpg')", "url('bg3.jpg')"], curIndex = 0;
+    var images = ["url('/assets/img/bg.jpg')", "url('/assets/img/bg2.jpg')"], curIndex = 0;
 
     $('.arrow_left').click(function() {
         if (curIndex > 0) {
