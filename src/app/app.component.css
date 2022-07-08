@@ -8,7 +8,7 @@
 }
 body {
     position: relative;
-    width: 1440px;
+    width: 1920px;
     background: #fff;
     height: 6253px;
 }
@@ -22,7 +22,7 @@ header {
     padding: 10px 100px;
     gap: 184px;
     position: absolute;
-    width: 1440px;
+    width: 1920px;
     height: 50px;
     left: 0px;
     top: 0px;
@@ -93,11 +93,11 @@ header .flags .flag2 {
     align-items: center;
     flex-direction: column;
     padding: 0px;
-    width: 1440px;
+    width: 1920px;
     height: 579px;
     left: 0;
     top: 50px;
-    background: url(/assets/img/bg.jpg);
+    background: url(bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     transition: 0.5s;
@@ -105,6 +105,7 @@ header .flags .flag2 {
 .banner .menu {
     position: absolute;
     top: 0px;
+    left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +133,7 @@ header .flags .flag2 {
     align-items: center;
     flex-direction: row;
     padding: 0;
-    width: 891px;
+    width: 1500px;
     height: 25px;
 }
 .banner .menu .menuBar ul {
@@ -198,6 +199,7 @@ header .flags .flag2 {
     background: #fff;
     cursor: pointer;
     border: none;
+    justify-content: center;
 }
 .banner .title button p {
     width: 69px;
@@ -212,12 +214,12 @@ header .flags .flag2 {
 .banner .title .arrow_left {
     position: absolute;
     opacity: 0.5;
-    left: 25%;
-    top: 50%;
+    left: 30%;
+    top: 42%;
     width: 16px;
     height: 52px;
     border: 1px solid #fff;
-    border-width: 0 2px 2px 0;
+    border-width: 0 4px 4px 0;
     padding: 25px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
@@ -226,25 +228,28 @@ header .flags .flag2 {
 .banner .title .arrow_right {
     position: absolute;
     opacity: 0.5;
-    left: 72%;
-    top: 50%;
+    left: 67%;
+    top: 42%;
     width: 16px;
     height: 52px;
     border: 1px solid #fff;
-    border-width: 0 2px 2px 0;
+    border-width: 0 4px 4px 0;
     padding: 25px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     cursor: pointer;
 }
+.banner .title .arrow_left:hover,
+.banner .title .arrow_right:hover {
+    opacity: 1;
+}
 .banner .slider {
     position: relative;
-    opacity: 0.5;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     padding: 0;
-    width: 65px;
+    width: 40px;
     height: 15px;
     gap: 10px;
     top: 40px;
@@ -269,7 +274,6 @@ header .flags .flag2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    left: 0;
 }
 .realization .realizationText {
     padding: 0;
@@ -292,7 +296,7 @@ header .flags .flag2 {
     width: 80%;
     height: 60px;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     color: #222;
     margin-left: 100px;
@@ -304,7 +308,7 @@ header .flags .flag2 {
     flex-direction: row;
     flex-wrap: wrap;
     height: 1012px;
-    width: 1440px;
+    width: 1920px;
 }
 .realization .realizationImg .box {
     width: 50%;
@@ -399,6 +403,7 @@ header .flags .flag2 {
     border: none;
     cursor: pointer;
     margin-top: 30px;
+    justify-content: center;
 }
 .realization .realizationImg button p {
     width: 69px;
@@ -418,7 +423,7 @@ header .flags .flag2 {
     align-items: flex-start;
     padding: 100px;
     width: 100%;
-    height: 596px;
+    height: 670px;
     top: 2122px;
 }
 .aboutUs .aboutContent {
@@ -429,7 +434,7 @@ header .flags .flag2 {
 }
 .aboutContent .col50 {
     position: relative;
-    width: 48%;
+    width: 50%;
     margin-right: 110px
 }
 .aboutUs .aboutContent .textAbout {
@@ -478,6 +483,7 @@ header .flags .flag2 {
     border: none;
     cursor: pointer;
     margin-top: 30px;
+    justify-content: center;
 }
 .aboutUs .aboutContent .textAbout button p {
     width: 69px;
@@ -502,17 +508,18 @@ header .flags .flag2 {
 .aboutUs .aboutContent .col50 .imgAbout img.about1 {
     top: 0;
     left: 0;
-    width: 529px;
-    height: 353px;
+    width: 600px;
+    height: 350px;
 }
 .aboutUs .aboutContent .col50 .imgAbout img.about2 {
     top: 0;
     left: 0;
-    width: 365px;
-    height: 243px;
+    width: 425px;
+    height: 250px;
     margin-left: 82px;
     transform: translateY(-15px);
 }
+
 /* --------Oferta-------------- */
 .offer {
     position: absolute;
@@ -522,7 +529,7 @@ header .flags .flag2 {
     align-items: flex-start;
     padding: 100px;
     gap: 50px;
-    width: 1440px;
+    width: 1920px;
     height: 1559px;
     left: 0;
     background: #f8f8f8;
@@ -607,25 +614,26 @@ header .flags .flag2 {
     padding: 0;
     gap: 70px;
     left: 130px;
+    transform: translateX(200px);
 }
 .logoBar .bar img {
-    width: 146px;
+    width: 200px;
     height: 110px;
     filter: grayscale(100%);
     opacity: 0.3;
 }
 .logoBar .bar img:nth-child(1) {
-    width: 175px;
+    width: 200px;
     height: 50px;
     transform: translateY(35px);
 }
 .logoBar .bar img:nth-child(3) {
-    width: 175px;
+    width: 200px;
     height: 80px;
     transform: translateY(10px);
 }
 .logoBar .bar img:nth-child(5) {
-    width: 175px;
+    width: 200px;
     height: 50px;
     transform: translateY(35px);
 }
@@ -636,12 +644,12 @@ header .flags .flag2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 1440px;
+    width: 1920px;
     height: 800px;
 }
 .latestNews .news {
-    width: 1440px;
-    height: 1200px;
+    width: 1920px;
+    height: 800px;
 }
 .latestNews .news h2 {
     font-weight: 200;
@@ -656,10 +664,9 @@ header .flags .flag2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     gap: 10px;
     position: absolute;
-    width: 1240px;
+    width: 1850px;
     top: 50px;
     left: 100px;
 }
@@ -667,16 +674,16 @@ header .flags .flag2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 610px;
-    height: 600px;
+    width: 920px;
+    height: 660px;
     background: #fff;
     margin-top: 50px;
     gap: 20px;
 }
 .latestNews .news .newsContent .imgNewsBox img {
     object-fit: cover;
-    width: 610px;
-    height: 338px;
+    width: 100%;
+    height: 400px;
 }
 .latestNews .news .newsContent .imgNewsBox .imgText {
     display: flex;
@@ -684,7 +691,7 @@ header .flags .flag2 {
     align-items: flex-start;
     padding: 0;
     gap: 5px;
-    width: 610px;
+    width: 100%;
     height: 177px;
 }
 .latestNews .news .newsContent .imgNewsBox h3 {
@@ -697,10 +704,10 @@ header .flags .flag2 {
     color: #636363;
 }
 .latestNews .news .newsContent .imgNewsBox p {
-    width: 609px;
+    width: 100%;
     height: 90px;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     color: #222;
 }
@@ -714,6 +721,7 @@ header .flags .flag2 {
     background: #d30018;
     cursor: pointer;
     border: none;
+    justify-content: center;
 }
 .latestNews .news .newsContent .imgNewsBox button p {
     width: 69px;
@@ -732,8 +740,8 @@ header .flags .flag2 {
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
-    width: 1240px;
-    height: 415px;
+    width: 1920px;
+    height: 500px;
     left: 100px;
     top: 5600px;
 }
@@ -759,25 +767,25 @@ header .flags .flag2 {
     align-items: center;
     padding: 0;
     gap: 20px;
-    width: 1240px;
-    height: 244px;
+    width: 1850px;
+    height: 340px;
 }
 .region .regionCity .cityBox {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 20px 30px;
-    width: 400px;
-    height: 68px;
+    width: 600px;
+    height: 100px;
     background: #f8f8f8;
     gap: 5px;
 }
 .region .regionCity .cityBox p {
-    width: 340px;
-    height: 28px;
+    width: 580px;
+    height: 80px;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 28px;
+    line-height: 60px;
     color: #636363;
 }
 .region .regionCity .cityBox p a {
@@ -786,14 +794,14 @@ header .flags .flag2 {
 .region .regionCity .cityBox::before {
     content: '';
     width: 4px;
-    height: 68px;
+    height: 100px;
     background: #d30018;
     transform: translate(-30px, -20px);
 }
 /*------------ Footer --------------*/
 footer {
     position: absolute;
-    top: 6100px;
+    top: 6150px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -822,21 +830,21 @@ footer .footerContent {
     background: #eee;
 }
 footer .footerContent .logoImg {
-    width: 171px;
-    height: 56px;
-    transform: translate(100px, 25px);
+    width: 300px;
+    height: 100px;
+    transform: translate(80px, 0px);
 }
 footer .footerContent .logoImg img {
-    width: 171px;
-    height: 56px;
+    width: 300px;
+    height: 100px;
     object-fit: cover;
 }
 footer .created p {
-    width: 280px;
+    width: 300px;
     height: 20px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 25px;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -850,9 +858,9 @@ footer .contentInfo {
     align-items: flex-start;
     padding: 0;
     gap: 30px;
-    width: 788px;
+    width: 950px;
     height: 110px;
-    transform: translate(450px, 20px);
+    transform: translate(530px, 20px);
 }
 footer .contentInfo .info {
     display: flex;
@@ -864,19 +872,151 @@ footer .contentInfo .info {
 footer .contentInfo .info a {
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 20px;
+    line-height: 22px;
     text-align: center;
     color: #636363;
     text-transform: uppercase;
 }
-
+@media (max-width: 1440px) {
+    body {
+        width: 1440px;
+    }
+    header {
+        width: 1440px;
+    }
+    .banner {
+        width: 1440px;
+    }
+    .banner .menu .menuBar {
+        width: 891px;
+    }
+    .banner .title .arrow_left {
+        left: 25%;
+        top: 50%;
+        border-width: 0 2px 2px 0;
+    }
+    .banner .title .arrow_right {
+        left: 72%;
+        top: 50%;
+        border-width: 0 2px 2px 0;
+    }
+    .realization .realizationImg {
+        width: 1440px;
+    }
+    .aboutUs {
+        height: 596px;
+    }
+    .aboutContent .col50 {
+        width: 48%;
+    }
+    .aboutUs .aboutContent .col50 .imgAbout img.about1 {
+        width: 529px;
+        height: 353px;
+    }
+    .aboutUs .aboutContent .col50 .imgAbout img.about2 {
+        width: 365px;
+        height: 243px;
+    }
+    .offer {
+        width: 1440px;
+    }
+    .logoBar .bar {
+        transform: translateX(-25px);
+    }
+    .logoBar .bar img {
+        width: 146px;
+    }
+    .logoBar .bar img:nth-child(1) {
+        width: 175px;
+    }
+    .logoBar .bar img:nth-child(3) {
+        width: 175px;
+    }
+    .logoBar .bar img:nth-child(5) {
+        width: 175px;
+    }
+    .latestNews {
+        width: 1440px;
+    }
+    .latestNews .news {
+        width: 1440px;
+        height: 1200px;
+    }
+    .latestNews .news .newsContent {
+        width: 1240px;
+    }
+    .latestNews .news .newsContent .imgNewsBox {
+        width: 610px;
+        height: 600px;
+    }
+    .latestNews .news .newsContent .imgNewsBox img {
+        width: 610px;
+        height: 338px;
+    }
+    .latestNews .news .newsContent .imgNewsBox .imgText {
+        width: 610px;
+    }
+    .latestNews .news .newsContent .imgNewsBox p {
+        width: 609px;
+        font-size: 18px;
+    }
+    .region {
+        width: 1240px;
+        height: 415px;
+    }
+    .region .regionCity {
+        width: 1240px;
+        height: 244px;
+    }
+    .region .regionCity .cityBox {
+        width: 400px;
+        height: 68px;
+    }
+    .region .regionCity .cityBox p {
+        width: 340px;
+        height: 28px;
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .region .regionCity .cityBox::before {
+        height: 68px;
+    }
+    footer {
+        top: 6100px;
+    }
+    footer .footerContent .logoImg {
+        width: 171px;
+        height: 56px;
+        transform: translate(100px, 25px);
+    }
+    footer .footerContent .logoImg img {
+        width: 171px;
+        height: 56px;
+    }
+    footer .created p {
+        width: 280px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    footer .contentInfo {
+        width: 788px;
+        transform: translate(450px, 20px);
+    }
+    footer .contentInfo .info a {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
 @media (max-width: 1200px) {
     header {
         width: 1200px;
     }
     .banner {
         width: 1200px;
+    }
+    .banner .slider {
+        width: 40px;
     }
     .realization {
         width: 1200px;
@@ -1090,6 +1230,9 @@ footer .contentInfo .info a {
     }
 }
 @media (max-width: 992px) {
+    body {
+        width: 992px;
+    }
     header {
         width: 992px;
     }
@@ -1140,6 +1283,9 @@ footer .contentInfo .info a {
     .banner .title .arrow_right {
         left: 75%;
         top: 40%;
+    }
+    .banner .slider {
+        width: 40px;
     }
     .realization {
         width: 992px;
@@ -1390,6 +1536,9 @@ footer .contentInfo .info a {
     }
 }
 @media (max-width: 768px) {
+    body {
+        width: 768px;
+    }
     header {
         width: 768px;
     }
@@ -1457,6 +1606,9 @@ footer .contentInfo .info a {
     .banner .title .arrow_right {
         left: 80%;
         top: 40%;
+    }
+    .banner .slider {
+        width: 40px;
     }
     .realization {
         width: 768px;
@@ -1734,6 +1886,7 @@ footer .contentInfo .info a {
 }
 @media (max-width: 576px) {
     body {
+        width: 576px;
         height: 7500px;
     }
     header {
@@ -1819,6 +1972,7 @@ footer .contentInfo .info a {
     }
     .banner .slider {
         transform: translateX(-70px);
+            width: 40px;
     }
     .realization {
         width: 576px;
