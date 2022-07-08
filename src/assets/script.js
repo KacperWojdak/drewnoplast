@@ -17,3 +17,18 @@ for (var i = 0; i < circle.length; i++) {
     });
 }
 }
+function arrowChange() {
+    var banner = document.getElementsByClassName('banner');
+    var images = ["url('bg.jpg')", "url('bg2.jpg')", "url('bg3.jpg')"], curIndex = 0;
+
+    $('.arrow_left').click(function() {
+        if (curIndex > 0) {
+            $(banner).css('background-image', images[--curIndex]);
+        }
+    });
+    $('.arrow_right').click(function() {
+        if (curIndex < images.length - 1) {
+            $(banner).css('background-image', images[++curIndex]);
+        }
+    });
+}
